@@ -19,10 +19,10 @@ var listFormat = (n, callback) => {
 				break;
 			}
 			range = 0; 
-        } 
-        num = n;
-	callback.apply(this, format);
-    }
+        	} 
+        	num = n;
+		callback.apply(this, format);
+    	}
 }
 
 for(var i = 1; i <= 1000; i++){
