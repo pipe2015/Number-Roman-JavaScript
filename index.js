@@ -107,13 +107,13 @@ for(var i = 1; i <= 1000; i++){
 		//ordenar los numeros
 		listFormat(i, (n1, n2) => {
             		order.forEach(e => {
-            		if(numberCharRoman.indexOf(e[0]) != -1){
-                		if(n1 == e[1] || n2 == e[1]){
-					if(n2 || !k){
-						numberCharRoman = numberCharRoman.replace(e[0], e[2]);	
+				if(numberCharRoman.indexOf(e[0]) != -1){
+					if(n1 == e[1] || n2 == e[1]){
+						if(n2 || !k){
+							numberCharRoman = numberCharRoman.replace(e[0], e[2]);	
+						}
 					}
-                   		}
-             		}
+				}
             		});
 			k++;
 		});
